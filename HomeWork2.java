@@ -29,11 +29,7 @@ class HomeWork2 {
     }
 
     static boolean sumBetween (int a, int b) {
-        boolean result = false;
-        if ((a + b) >= 10 && (a + b) <= 20 ) {
-            result = true;
-        }
-        return result;
+        return (a + b) >= 10 && (a + b) <= 20;
     }
 
     static void positiveOrNegative (int a) {
@@ -41,11 +37,7 @@ class HomeWork2 {
     }
 
     static boolean returnPositiveOrNegative (int a) {
-        boolean result = true;
-        if (a >= 0) {
-            result = false;
-        }
-        return result;
+        return a < 0;
     }
 
     static void printText (String a, int b) {
