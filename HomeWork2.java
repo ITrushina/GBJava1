@@ -1,5 +1,5 @@
-/*
- * Java 1. Home work 2
+/**
+ * Java 1. Home work 2 (измененный)
  *
  * @author Trushina Irina
  * @version 12.09.2021
@@ -48,7 +48,7 @@ class HomeWork2 {
 
     static boolean leapYear (int a) {
         boolean result = false;
-        if (((a % 4) == 0 && (a % 100) != 0 && (a % 400) != 0) || ((a % 4) == 0 && (a % 400) == 0)) {
+        if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) {
             result = true;
         }
         return result;
