@@ -22,7 +22,7 @@ public class Employee {
     }
 
     public int getAge() {
-        return this.age;
+        return age;
     }
 
     @Override
