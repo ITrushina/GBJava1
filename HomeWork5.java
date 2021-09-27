@@ -19,9 +19,9 @@ public class HomeWork5 {
         System.out.println();
 
         System.out.println("Employees over 40 years old:");
-        for (int i = 0; i < employeeArray.length; i++) {
-            if (employeeArray[i].getAge() > 40) {
-                System.out.println(employeeArray[i]);
+        for (Employee employee : employeeArray) {
+            if (employee.getAge() > 40) {
+                System.out.println(employee);
             }
         }
     }
