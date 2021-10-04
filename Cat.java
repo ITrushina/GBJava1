@@ -1,16 +1,31 @@
 /**
- * Java 1. Home work 6
+ * Java 1. Home work 
  *
  * @author Trushina Irina
- * @version 30.09.2021
+ * @version 04.10.2021
  */
-class Cat extends Animal {
-    Cat(int distRun, int distSwim) {
-        super(distRun, distSwim);
+class Cat {
+    private int appetite;
+    private boolean satiety;
+
+    Cat(int appetite, boolean satiety) {
+        this.appetite = appetite;
+        this.satiety = satiety;
     }
 
-    @Override
-    public String swim(int dist) {
-        return "The " + this.getClass().getSimpleName() + " can't swim";
+    boolean getSatiety() {
+        return satiety;
+    }
+
+    void setSatiety(boolean satiety) {
+        this.satiety = satiety;
+    }
+
+    void eat(Plate plate) {
+        if (satiety) {
+            System.out.println("The cat is not hungry");
+        } else {
+            setSatiety(plate.decreaseFood(appetite));  
+        }
     }
 }
